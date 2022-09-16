@@ -1,0 +1,483 @@
+*{
+    box-sizing: border-box;
+     margin: 0; }
+
+
+.BodyGeneral{
+
+    font-family: 'Aboreto', cursive;
+
+    
+     /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2D56AD', endColorstr='#060606', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
+ 
+     height: 100vh;
+}
+.NavGeneral{
+   color: chartreuse;
+   
+
+}
+.NavGeneral li a {
+   color: white;
+   
+}
+
+.PGeneral{
+   color: white;
+}
+
+.DiseñoTodoFooter{
+   color:white;
+}
+
+
+
+
+/* CSS de index*/
+.angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+    
+ }
+ #item-Imagen {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   text-size-adjust: 10%;
+   height: 100%;
+   color: white;
+   background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 5;
+    border-radius: 3%;
+ }
+ #item-Menu {
+    grid-row-start: 2;
+    grid-column-start: 5;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+ }
+ #item-Titulo {
+   text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 6;
+ }
+ #item-Main { 
+    grid-row-start: 5;
+    grid-column-start: 1;
+ 
+    grid-row-end: 8;
+    grid-column-end: 6;
+ }
+ #item-Footer {
+    grid-row-start: 8;
+    grid-column-start: 1;
+    grid-row-end: 9;
+    grid-column-end: 6;
+    text-align: center;
+ }
+ #item-MenuModelos {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    color: white;
+    grid-row-end: 5;
+    grid-column-end: 5;
+ }
+
+ /* CSS de servicios*/
+ .angry-gridServicios {
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+ }
+ #ServiciosImg {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   text-size-adjust: 10%;
+   height: 100%;
+   color: white;
+   background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 5;
+    border-radius: 3%;
+ }
+ #ServiciosMenu {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 4;
+    grid-column-end: 6;
+ }
+ #ServiciosMain {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 6;    
+ }
+ #ServiciosFooter {
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-row-end: 8;
+    grid-column-end: 6;
+    text-align: center;   
+ }
+ #item-4Servicios { 
+    background-color: #fbed99; 
+    grid-row-start: 5;
+    grid-column-start: 1; 
+    grid-row-end: 6;
+    grid-column-end: 3;   
+ }
+ #item-5Servicios {
+    background-color: #bbe558; 
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-row-end: 7;
+    grid-column-end: 3;  
+ }
+ #item-6Servicios { 
+    background-color: #8a77fc; 
+    grid-row-start: 5;
+    grid-column-start: 4; 
+    grid-row-end: 6;
+    grid-column-end: 6;   
+ }
+ #item-7Servicios {
+    background-color: #ed7ce9; 
+    grid-row-start: 6;
+    grid-column-start: 4;
+    grid-row-end: 7;
+    grid-column-end: 6; 
+ }
+ #item-8Servicios {
+    background-color: #bc9d66; 
+    grid-row-start: 5;
+    grid-column-start: 3;
+    grid-row-end: 6;
+    grid-column-end: 4;  
+ }
+ #item-9Servicios {
+    background-color: #8ed8fd; 
+    grid-row-start: 6;
+    grid-column-start: 3;
+    grid-row-end: 7;
+    grid-column-end: 4;  
+ }
+
+  /* CSS de promociones*/
+  .angry-gridPromociones {
+   display: grid; 
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   gap: 0px;
+   height: 100%;
+}
+#PromocionesImg {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   text-size-adjust: 10%;
+   height: 100%;
+   color: white;
+   background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 3;
+   grid-column-end: 5;   
+}
+#PromocionesMenu {
+   grid-row-start: 1;
+   grid-column-start: 5;
+   grid-row-end: 3;
+   grid-column-end: 6;
+}
+#PromocionesArticulo{
+   grid-row-start: 3;
+   grid-column-start: 1;
+   grid-row-end: 6;
+   grid-column-end: 6;
+}
+#PromocionesFooter {
+   grid-row-start: 6;
+   grid-column-start: 1;
+   grid-row-end: 7;
+   grid-column-end: 6;
+   text-align: center; 
+}
+
+ /* CSS de Contacto*/
+ .angry-gridContacto {
+   display: grid; 
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   gap: 0px;
+   height: 100%;
+} 
+#ContactoImg {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   text-size-adjust: 10%;
+   height: 100%;
+   color: white;
+   background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 3;
+   grid-column-end: 5;  
+}
+#ContactoMenu {
+   grid-row-start: 1;
+   grid-column-start: 5;
+   grid-row-end: 4;
+   grid-column-end: 6;
+}
+#ContactoFormulario {
+   grid-row-start: 4;
+   grid-column-start: 1;
+   grid-row-end: 6;
+   grid-column-end: 6;  
+}
+#ContactoFormularioDeContacto {
+   grid-row-start: 3;
+   grid-column-start: 1;
+   grid-row-end: 4;
+   grid-column-end: 5;
+}
+#ContactoFooter {
+   grid-row-start: 6;
+   grid-column-start: 1;
+   grid-row-end: 7;
+   grid-column-end: 6;
+   text-align: center;
+}
+
+ /* CSS de acerca de nosotros*/
+ .angry-gridAcercaDeNosotros {
+   display: grid; 
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+   gap: 0px;
+   height: 100%;
+} 
+#AdcImg {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   text-size-adjust: 10%;
+   height: 100%;
+   color: white;
+   background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 3;
+   grid-column-end: 5;  
+}
+#AdcMenu {
+   grid-row-start: 1;
+   grid-column-start: 5;
+   grid-row-end: 5;
+   grid-column-end: 6;
+}
+#AdcMain {
+   grid-row-start: 3;
+   grid-column-start: 1;
+   grid-row-end: 5;
+   grid-column-end: 5;
+}
+#AdcFooter {
+   grid-row-start: 5;
+   grid-column-start: 1;
+   grid-row-end: 6;
+   grid-column-end: 6;
+   text-align: center;
+   
+}
+
+
+/* CSS DE PC*/
+
+@media (min-width: 720px){
+   .BodyGeneral{
+      height: auto;
+      width: auto;
+   }
+   .NavGeneral{
+      display: inline;
+      position: sticky;
+       top: 0;
+       z-index: 1;
+       text-align: center;
+       padding-left: 10px;
+       padding-bottom: 10px;
+       padding-top: 10px;
+       padding-right: 10px;
+   }
+   .NavGeneral li a {
+      position: sticky;
+      text-decoration: none;
+      background-color: #131720;
+      display: inline-block;
+      padding: 5px;
+      margin: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      border: 3px solid #52f0e3  ;
+      border-radius: 100px;
+      color: white;
+
+   }
+   .DiseñoTodoFooter{
+      color:white;
+   }
+
+ /* CSS de index PC*/
+   .angry-grid {
+      display:inline;
+      gap: 0px;
+      height: 100%;
+   }
+   #item-Imagen{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      height: 90vh;
+      color: white;
+   }
+
+ /* CSS de servicios PC*/
+ .angry-gridServicios{
+   display:inline;
+      gap: 0px;
+      height: 100%;
+ }
+#ServiciosImg{
+   display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      height: 90vh;
+      color: white;
+}
+
+ /* CSS de promociones PC*/
+ .angry-gridPromociones{
+   display:inline;
+   gap: 0px;
+   height: 100%;
+ }
+ #PromocionesImg{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   height: 90vh;
+   color: white;
+ }
+
+ /* CSS de contacto PC*/
+ .angry-gridContacto{
+   display:inline;
+   gap: 0px;
+   height: 100%;
+ }
+ #ContactoImg{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   height: 90vh;
+   color: white;
+ }
+
+/* CSS de acerca de nosotros PC*/
+.angry-gridAcercaDeNosotros{
+   display:inline;
+   gap: 0px;
+   height: 100%;
+}
+#AdcImg{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   height: 90vh;
+   color: white;
+}
+
+}
