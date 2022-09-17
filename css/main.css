@@ -28,15 +28,7 @@
  
      height: 100vh;
 }
-.NavGeneral{
-   color: chartreuse;
-   
 
-}
-.NavGeneral li a {
-   color: white;
-   
-}
 
 .PGeneral{
    color: white;
@@ -45,6 +37,27 @@
 .DiseñoTodoFooter{
    color:white;
 }
+
+/*
+@media (min-width: 720px){
+.d-flex{
+   content-visibility: none;
+   color: red;
+}
+}
+*/
+.card{
+   color: black;
+   
+
+}
+
+.container-fluid li a {
+   color: white;
+    
+}
+
+
 
 
 
@@ -59,42 +72,7 @@
     height: 100%;
     
  }
- #item-Imagen {
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   text-size-adjust: 10%;
-   height: 100%;
-   color: white;
-   background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-row-end: 4;
-    grid-column-end: 5;
-    border-radius: 3%;
- }
- #item-Menu {
-    grid-row-start: 2;
-    grid-column-start: 5;
  
-    grid-row-end: 5;
-    grid-column-end: 6;
- }
- #item-Titulo {
-   text-align: center;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 2;
-    grid-column-end: 6;
- }
  #item-Main { 
     grid-row-start: 5;
     grid-column-start: 1;
@@ -116,6 +94,9 @@
     grid-row-end: 5;
     grid-column-end: 5;
  }
+ .col{
+   color: white;
+ }
 
  /* CSS de servicios*/
  .angry-gridServicios {
@@ -124,34 +105,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px;
     height: 100%;
- }
- #ServiciosImg {
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   text-size-adjust: 10%;
-   height: 100%;
-   color: white;
-   background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 4;
-    grid-column-end: 5;
-    border-radius: 3%;
- }
- #ServiciosMenu {
-    grid-row-start: 1;
-    grid-column-start: 5;
-    grid-row-end: 4;
-    grid-column-end: 6;
  }
  #ServiciosMain {
     grid-row-start: 4;
@@ -217,33 +170,7 @@
    gap: 0px;
    height: 100%;
 }
-#PromocionesImg {
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   text-size-adjust: 10%;
-   height: 100%;
-   color: white;
-   background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-   grid-row-start: 1;
-   grid-column-start: 1;
-   grid-row-end: 3;
-   grid-column-end: 5;   
-}
-#PromocionesMenu {
-   grid-row-start: 1;
-   grid-column-start: 5;
-   grid-row-end: 3;
-   grid-column-end: 6;
-}
+
 #PromocionesArticulo{
    grid-row-start: 3;
    grid-column-start: 1;
@@ -266,44 +193,20 @@
    gap: 0px;
    height: 100%;
 } 
-#ContactoImg {
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   text-size-adjust: 10%;
-   height: 100%;
-   color: white;
-   background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-   grid-row-start: 1;
-   grid-column-start: 1;
-   grid-row-end: 3;
-   grid-column-end: 5;  
-}
-#ContactoMenu {
-   grid-row-start: 1;
-   grid-column-start: 5;
-   grid-row-end: 4;
-   grid-column-end: 6;
-}
+
 #ContactoFormulario {
    grid-row-start: 4;
    grid-column-start: 1;
    grid-row-end: 6;
-   grid-column-end: 6;  
+   grid-column-end: 6; 
+   color: white; 
 }
 #ContactoFormularioDeContacto {
    grid-row-start: 3;
    grid-column-start: 1;
    grid-row-end: 4;
    grid-column-end: 5;
+   color: white;
 }
 #ContactoFooter {
    grid-row-start: 6;
@@ -321,33 +224,7 @@
    gap: 0px;
    height: 100%;
 } 
-#AdcImg {
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   text-size-adjust: 10%;
-   height: 100%;
-   color: white;
-   background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/img/pexels-olya-kobruseva-8358047.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-   grid-row-start: 1;
-   grid-column-start: 1;
-   grid-row-end: 3;
-   grid-column-end: 5;  
-}
-#AdcMenu {
-   grid-row-start: 1;
-   grid-column-start: 5;
-   grid-row-end: 5;
-   grid-column-end: 6;
-}
+
 #AdcMain {
    grid-row-start: 3;
    grid-column-start: 1;
@@ -406,31 +283,14 @@
       gap: 0px;
       height: 100%;
    }
-   #item-Imagen{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-      height: 90vh;
-      color: white;
-   }
-
+ 
  /* CSS de servicios PC*/
  .angry-gridServicios{
    display:inline;
       gap: 0px;
       height: 100%;
  }
-#ServiciosImg{
-   display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-      height: 90vh;
-      color: white;
-}
+
 
  /* CSS de promociones PC*/
  .angry-gridPromociones{
@@ -438,15 +298,7 @@
    gap: 0px;
    height: 100%;
  }
- #PromocionesImg{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   flex-direction: column;
-   height: 90vh;
-   color: white;
- }
+
 
  /* CSS de contacto PC*/
  .angry-gridContacto{
@@ -454,15 +306,7 @@
    gap: 0px;
    height: 100%;
  }
- #ContactoImg{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   flex-direction: column;
-   height: 90vh;
-   color: white;
- }
+ 
 
 /* CSS de acerca de nosotros PC*/
 .angry-gridAcercaDeNosotros{
@@ -470,14 +314,7 @@
    gap: 0px;
    height: 100%;
 }
-#AdcImg{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   flex-direction: column;
-   height: 90vh;
-   color: white;
-}
+
 
 }
+

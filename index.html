@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>INDEX</title>
 
@@ -18,78 +22,152 @@
 
 <body class="BodyGeneral">
 
-    <div class="angry-grid">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-none">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./img/bitlog.png">
+                    <img src="./img/bitlog.png" alt="logo" width="180px">
 
-        <div id="item-Titulo">&nbsp;
-            <section>
-                <h1>INDEX</h1>
-            </section>
-        </div>
+                </a>
 
-        <div id="item-Imagen">&nbsp;
-            <section>
-                <h1>MINERIA BITCOIN</h1>
-            </section>
-        </div>
-
-        <div id="item-Menu">&nbsp;
-            <nav class="NavGeneral">
-                <div>
-                    <ul>
-                        <li>
-                            <a href="./pages/servicios.html">servicios</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
                         </li>
-                        <li>
-                            <a href="./pages/promociones.html">promociones</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/promociones.html">Promociones</a>
                         </li>
-                        <li>
-                            <a href="./pages/contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
-                        <li>
-                            <a href="./pages/acercadenosotros.html">acerca de nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/acercadenosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
-
                 </div>
-            </nav>
+            </div>
+        </nav>
+    </header>
 
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
-
-
-        <div id="item-MenuModelos">&nbsp;
-            <nav>
-                <div>
-                    <ul>
-                        <li>modelo1</li>
-                        <li>modelo2</li>
-                        <li>modelo3</li>
-                        <li>modelo4</li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/fondomineriados.jpg.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="./img/pexels-olya-kobruseva-8358047.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="./img/tarjeta-grafica.jpg.png" class="d-block w-100" alt="...">
+            </div>
         </div>
-
-
-        <div id="item-Main">&nbsp;
-            <main>
-                <p class="PGeneral">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A vitae, maiores harum eos repellat eveniet
-                    numquam error est facilis! Debitis sit minima deserunt ipsum iure saepe itaque voluptas qui autem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, reprehenderit. Aspernatur
-                    nihil ea, tempore quasi suscipit cupiditate praesentium quod ducimus ut exercitationem eaque
-                    adipisci, aperiam, id eos temporibus modi illo.
-                </p>
-            </main>
-        </div>
-
-        <div id="item-Footer">&nbsp;
-            <footer class="DiseñoTodoFooter">
-                <h2>
-                    Pie de Paginaa
-                </h2>
-            </footer>
-        </div>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
+
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/pexels-nana-dua-8622911.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Rig de mineria informacion.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/pexels-nana-dua-8622911.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Rig de mineria informacion.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/pexels-nana-dua-8622911.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Rig de mineria informacion.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/pexels-nana-dua-8622911.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Rig de mineria informacion.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="item-Main">&nbsp;
+        <main>
+            <p class="PGeneral">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A vitae, maiores harum eos
+                repellat eveniet
+                numquam error est facilis! Debitis sit minima deserunt ipsum iure saepe itaque voluptas qui autem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, reprehenderit. Aspernatur
+                nihil ea, tempore quasi suscipit cupiditate praesentium quod ducimus ut exercitationem eaque
+                adipisci, aperiam, id eos temporibus modi illo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ullam repellendus dolorem itaque
+                mollitia et ipsum harum excepturi quod eaque inventore possimus saepe, ipsam cumque nihil reiciendis
+                impedit iste consectetur.
+                Libero laborum error totam aliquid? Iusto dolorem placeat reiciendis et velit amet, voluptates esse.
+                Possimus, similique ipsa voluptates unde commodi laborum cum! Explicabo vel incidunt, dicta porro autem
+                eos nostrum?
+                Excepturi doloremque quaerat nobis debitis voluptatem deleniti, quasi voluptatibus, eaque error, officia
+                voluptatum porro quo. Eos quos dolore nobis quam nam corporis illo. Quis voluptatem delectus ad facilis
+                unde repudiandae!
+                Tenetur saepe voluptatum minima libero velit blanditiis, vero repellendus dolorem eos cumque sunt ex.
+                Iure, debitis laudantium nam perspiciatis quae obcaecati quis, eius culpa eos numquam repellendus neque
+                quibusdam porro?
+                Vero corrupti quasi voluptate, alias sapiente maxime enim quis ducimus eum repellendus, ipsa voluptatem
+                quam dolores repudiandae nisi explicabo quibusdam quo consequatur unde porro culpa hic officia. Atque,
+                dolore harum?
+            </p>
+        </main>
+    </div>
+
+    <div id="item-Footer">&nbsp;
+        <footer class="DiseñoTodoFooter">
+            <h2>
+                Pie de Paginaa
+            </h2>
+        </footer>
+    </div>
+
+
+
+
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,56 +9,116 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Documentos</title>
+    <title>Promociones</title>
 </head>
+
 <body class="BodyGeneral">
-    <div class="angry-gridPromociones">
-        <div id="PromocionesImg">&nbsp;
-            <section>
-                <h1>
-                  Promociones
-                </h1>
-              </section>
-        </div>
-        <div id="PromocionesMenu">&nbsp;
-            <nav class="NavGeneral">
-                <div>
-                    <ul>
-                        <li>
-                            <a href="./servicios.html">servicios</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-none">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../img/bitlog.png">
+                    <img src="../img/bitlog.png" alt="logo" width="180px">
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
                         </li>
-                        <li>
-                            <a href="../index.html">inicio</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li>
-                            <a href="./contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
-                        <li>
-                            <a href="./acercadenosotros.html">acerca de nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./acercadenosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
-          
                 </div>
-            </nav>
-        </div>
-        <div id="PromocionesArticulo">&nbsp;
-            <main>
-                <p class="PGeneral">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A vitae, maiores harum eos repellat eveniet
-                    numquam error est facilis! Debitis sit minima deserunt ipsum iure saepe itaque voluptas qui autem.
-                </p>
-            </main>
-        </div>
+            </div>
+        </nav>
+    </header>
 
-        <div id="PromocionesFooter">&nbsp;
-            <footer class="DiseñoTodoFooter">
-                <h1>
-                  footer
-                </h1>
-              </footer>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
-      </div>
-      
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/fondomineriados.jpg.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="../img/pexels-olya-kobruseva-8358047.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="../img/tarjeta-grafica.jpg.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    </div>
+    <div id="PromocionesArticulo">&nbsp;
+        <main>
+            <p class="PGeneral">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A vitae, maiores harum eos
+                repellat eveniet
+                numquam error est facilis! Debitis sit minima deserunt ipsum iure saepe itaque voluptas qui autem.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, libero. Delectus, dicta? Nihil quasi
+                aperiam in unde assumenda minus ipsam aspernatur eos modi praesentium officia atque tempore iste, ea
+                molestias.
+                Ullam quis reprehenderit repellendus accusantium dolore rerum nulla, doloribus cupiditate voluptatum,
+                voluptatibus quam molestias est! Excepturi voluptatibus aspernatur officiis, alias explicabo facilis
+                adipisci voluptatum molestias. Aliquid distinctio aliquam illo sequi.
+                Est voluptatem voluptatibus minus soluta ea recusandae eligendi unde autem corrupti repellat ullam
+                laborum, ducimus, nemo mollitia cupiditate dolorum deleniti neque possimus nobis voluptates tenetur fuga
+                quas aliquam. Sit, dicta?
+                Nisi doloremque odio voluptatem magni, minima nam laboriosam consequuntur nemo nihil itaque ipsam
+                molestiae commodi qui voluptate esse similique quibusdam distinctio sint aliquid exercitationem quia
+                labore, velit excepturi? Corrupti, sunt.
+                Ducimus ullam accusamus, modi consectetur unde saepe reiciendis velit nulla dignissimos assumenda qui!
+                Impedit, nesciunt repudiandae optio hic quas consequatur cumque corrupti iure quisquam sapiente, animi
+                quibusdam reprehenderit? Odit, ipsam!
+            </p>
+        </main>
+    </div>
+
+    <div id="PromocionesFooter">&nbsp;
+        <footer class="DiseñoTodoFooter">
+            <h1>
+                footer
+            </h1>
+        </footer>
+    </div>
+    </div>
+
 </body>
+
 </html>
