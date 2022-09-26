@@ -1,42 +1,29 @@
-*{
-    box-sizing: border-box;
-     margin: 0; }
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0; }
 
+.BodyGeneral {
+  font-family: 'Aboreto', cursive;
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(90deg, #060606 0%, #2d56ad 100%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, #060606 0%, #2d56ad 100%);
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, #060606 0%, #2d56ad 100%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2D56AD', endColorstr='#060606', GradientType=0 );
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, #060606 0%, #2d56ad 100%);
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, #060606 0%, #2d56ad 100%);
+  height: 100vh; }
 
-.BodyGeneral{
+.PGeneral {
+  color: white; }
 
-    font-family: 'Aboreto', cursive;
-
-    
-     /* ff 3.6+ */
-    background:-moz-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%); 
-
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
-
-    /* opera 11.10+ */
-    background:-o-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
-
-    /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2D56AD', endColorstr='#060606', GradientType=0 );
-
-    /* ie 10+ */
-    background:-ms-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
-
-    /* global 94%+ browsers support */
-    background:linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
- 
-     height: 100vh;
-}
-
-
-.PGeneral{
-   color: white;
-}
-
-.DiseñoTodoFooter{
-   color:white;
-}
+.DiseñoTodoFooter {
+  color: white; }
 
 /*
 @media (min-width: 720px){
@@ -46,275 +33,228 @@
 }
 }
 */
-.card{
-   color: black;
-   
-
-}
+.card {
+  color: black; }
 
 .container-fluid li a {
-   color: white;
-    
-}
-
-
-
-
-
+  color: white; }
 
 /* CSS de index*/
 .angry-grid {
-    display: grid; 
- 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px;
-    height: 100%;
-    
- }
- 
- #item-Main { 
-    grid-row-start: 5;
-    grid-column-start: 1;
- 
-    grid-row-end: 8;
-    grid-column-end: 6;
- }
- #item-Footer {
-    grid-row-start: 8;
-    grid-column-start: 1;
-    grid-row-end: 9;
-    grid-column-end: 6;
-    text-align: center;
- }
- #item-MenuModelos {
-    grid-row-start: 4;
-    grid-column-start: 1;
-    color: white;
-    grid-row-end: 5;
-    grid-column-end: 5;
- }
- .col{
-   color: white;
- }
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%; }
 
- /* CSS de servicios*/
- .angry-gridServicios {
-    display: grid; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px;
-    height: 100%;
- }
- #ServiciosMain {
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-row-end: 5;
-    grid-column-end: 6;    
- }
- #ServiciosFooter {
-    grid-row-start: 7;
-    grid-column-start: 1;
-    grid-row-end: 8;
-    grid-column-end: 6;
-    text-align: center;   
- }
- #item-4Servicios { 
-    background-color: #fbed99; 
-    grid-row-start: 5;
-    grid-column-start: 1; 
-    grid-row-end: 6;
-    grid-column-end: 3;   
- }
- #item-5Servicios {
-    background-color: #bbe558; 
-    grid-row-start: 6;
-    grid-column-start: 1;
-    grid-row-end: 7;
-    grid-column-end: 3;  
- }
- #item-6Servicios { 
-    background-color: #8a77fc; 
-    grid-row-start: 5;
-    grid-column-start: 4; 
-    grid-row-end: 6;
-    grid-column-end: 6;   
- }
- #item-7Servicios {
-    background-color: #ed7ce9; 
-    grid-row-start: 6;
-    grid-column-start: 4;
-    grid-row-end: 7;
-    grid-column-end: 6; 
- }
- #item-8Servicios {
-    background-color: #bc9d66; 
-    grid-row-start: 5;
-    grid-column-start: 3;
-    grid-row-end: 6;
-    grid-column-end: 4;  
- }
- #item-9Servicios {
-    background-color: #8ed8fd; 
-    grid-row-start: 6;
-    grid-column-start: 3;
-    grid-row-end: 7;
-    grid-column-end: 4;  
- }
+#item-Main {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 8;
+  grid-column-end: 6; }
 
-  /* CSS de promociones*/
-  .angry-gridPromociones {
-   display: grid; 
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   gap: 0px;
-   height: 100%;
-}
+#item-Footer {
+  grid-row-start: 8;
+  grid-column-start: 1;
+  grid-row-end: 9;
+  grid-column-end: 6;
+  text-align: center; }
 
-#PromocionesArticulo{
-   grid-row-start: 3;
-   grid-column-start: 1;
-   grid-row-end: 6;
-   grid-column-end: 6;
-}
+#item-MenuModelos {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  color: white;
+  grid-row-end: 5;
+  grid-column-end: 5; }
+
+.col {
+  color: white; }
+
+/* CSS de servicios*/
+.angry-gridServicios {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%; }
+
+#ServiciosMain {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 6; }
+
+#ServiciosFooter {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  grid-row-end: 8;
+  grid-column-end: 6;
+  text-align: center; }
+
+#item-4Servicios {
+  background-color: #fbed99;
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 3; }
+
+#item-5Servicios {
+  background-color: #bbe558;
+  grid-row-start: 6;
+  grid-column-start: 1;
+  grid-row-end: 7;
+  grid-column-end: 3; }
+
+#item-6Servicios {
+  background-color: #8a77fc;
+  grid-row-start: 5;
+  grid-column-start: 4;
+  grid-row-end: 6;
+  grid-column-end: 6; }
+
+#item-7Servicios {
+  background-color: #ed7ce9;
+  grid-row-start: 6;
+  grid-column-start: 4;
+  grid-row-end: 7;
+  grid-column-end: 6; }
+
+#item-8Servicios {
+  background-color: #bc9d66;
+  grid-row-start: 5;
+  grid-column-start: 3;
+  grid-row-end: 6;
+  grid-column-end: 4; }
+
+#item-9Servicios {
+  background-color: #8ed8fd;
+  grid-row-start: 6;
+  grid-column-start: 3;
+  grid-row-end: 7;
+  grid-column-end: 4; }
+
+/* CSS de promociones*/
+.angry-gridPromociones {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%; }
+
+#PromocionesArticulo {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 6; }
+
 #PromocionesFooter {
-   grid-row-start: 6;
-   grid-column-start: 1;
-   grid-row-end: 7;
-   grid-column-end: 6;
-   text-align: center; 
-}
+  grid-row-start: 6;
+  grid-column-start: 1;
+  grid-row-end: 7;
+  grid-column-end: 6;
+  text-align: center; }
 
- /* CSS de Contacto*/
- .angry-gridContacto {
-   display: grid; 
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   gap: 0px;
-   height: 100%;
-} 
+/* CSS de Contacto*/
+.angry-gridContacto {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%; }
 
 #ContactoFormulario {
-   grid-row-start: 4;
-   grid-column-start: 1;
-   grid-row-end: 6;
-   grid-column-end: 6; 
-   color: white; 
-}
-#ContactoFormularioDeContacto {
-   grid-row-start: 3;
-   grid-column-start: 1;
-   grid-row-end: 4;
-   grid-column-end: 5;
-   color: white;
-}
-#ContactoFooter {
-   grid-row-start: 6;
-   grid-column-start: 1;
-   grid-row-end: 7;
-   grid-column-end: 6;
-   text-align: center;
-}
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 6;
+  color: white; }
 
- /* CSS de acerca de nosotros*/
- .angry-gridAcercaDeNosotros {
-   display: grid; 
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
-   gap: 0px;
-   height: 100%;
-} 
+#ContactoFormularioDeContacto {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 5;
+  color: white; }
+
+#ContactoFooter {
+  grid-row-start: 6;
+  grid-column-start: 1;
+  grid-row-end: 7;
+  grid-column-end: 6;
+  text-align: center; }
+
+/* CSS de acerca de nosotros*/
+.angry-gridAcercaDeNosotros {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%; }
 
 #AdcMain {
-   grid-row-start: 3;
-   grid-column-start: 1;
-   grid-row-end: 5;
-   grid-column-end: 5;
-}
-#AdcFooter {
-   grid-row-start: 5;
-   grid-column-start: 1;
-   grid-row-end: 6;
-   grid-column-end: 6;
-   text-align: center;
-   
-}
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 5; }
 
+#AdcFooter {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 6;
+  text-align: center; }
 
 /* CSS DE PC*/
-
-@media (min-width: 720px){
-   .BodyGeneral{
-      height: auto;
-      width: auto;
-   }
-   .NavGeneral{
-      display: inline;
-      position: sticky;
-       top: 0;
-       z-index: 1;
-       text-align: center;
-       padding-left: 10px;
-       padding-bottom: 10px;
-       padding-top: 10px;
-       padding-right: 10px;
-   }
-   .NavGeneral li a {
-      position: sticky;
-      text-decoration: none;
-      background-color: #131720;
-      display: inline-block;
-      padding: 5px;
-      margin: 5px;
-      text-transform: uppercase;
-      text-align: center;
-      border: 3px solid #52f0e3  ;
-      border-radius: 100px;
-      color: white;
-
-   }
-   .DiseñoTodoFooter{
-      color:white;
-   }
-
- /* CSS de index PC*/
-   .angry-grid {
-      display:inline;
-      gap: 0px;
-      height: 100%;
-   }
- 
- /* CSS de servicios PC*/
- .angry-gridServicios{
-   display:inline;
-      gap: 0px;
-      height: 100%;
- }
-
-
- /* CSS de promociones PC*/
- .angry-gridPromociones{
-   display:inline;
-   gap: 0px;
-   height: 100%;
- }
-
-
- /* CSS de contacto PC*/
- .angry-gridContacto{
-   display:inline;
-   gap: 0px;
-   height: 100%;
- }
- 
-
-/* CSS de acerca de nosotros PC*/
-.angry-gridAcercaDeNosotros{
-   display:inline;
-   gap: 0px;
-   height: 100%;
-}
-
-
-}
-
+@media (min-width: 720px) {
+  .BodyGeneral {
+    height: auto;
+    width: auto; }
+  .NavGeneral {
+    display: inline;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px; }
+  .NavGeneral li a {
+    position: sticky;
+    text-decoration: none;
+    background-color: #131720;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 3px solid #52f0e3;
+    border-radius: 100px;
+    color: white; }
+  .DiseñoTodoFooter {
+    color: white; }
+  /* CSS de index PC*/
+  .angry-grid {
+    display: inline;
+    gap: 0px;
+    height: 100%; }
+  /* CSS de servicios PC*/
+  .angry-gridServicios {
+    display: inline;
+    gap: 0px;
+    height: 100%; }
+  /* CSS de promociones PC*/
+  .angry-gridPromociones {
+    display: inline;
+    gap: 0px;
+    height: 100%; }
+  /* CSS de contacto PC*/
+  .angry-gridContacto {
+    display: inline;
+    gap: 0px;
+    height: 100%; }
+  /* CSS de acerca de nosotros PC*/
+  .angry-gridAcercaDeNosotros {
+    display: inline;
+    gap: 0px;
+    height: 100%; } }
