@@ -28,38 +28,67 @@
  
      height: 100vh;
 }
-
-
-.PGeneral{
-   color: white;
+$Font-sizes: (
+  h1: 40px,
+  h2: 36px,
+  h3: 24px,
+  h4: 18px,
+  p: 18px,
+ 
+);
+@each $tag, $size in $Font-sizes {
+   #{$tag} {
+      Font-size: $size;
+      color:white;     
+   }
 }
 
-.DiseñoTodoFooter{
-   color:white;
+@mixin gap-height($gap, $height){
+   height: $height;
+   gap: $gap;
 }
 
-/*
-@media (min-width: 720px){
-.d-flex{
-   content-visibility: none;
-   color: red;
+   @mixin sizes($width, $height) {
+   height: $height;
+   width: $width;
 }
-}
-*/
-.card{
-   color: black;
-   
 
+
+
+
+.card-body{
+   background-color: #22323b;
 }
 
 .container-fluid li a {
-   color: white;
+   color: rgb(241, 240, 240);
     
 }
 
+.DiseñoTodoFooter{
+   min-width: 200px;
+   display: flex;
+   justify-content: space-around;
+}
 
+.DiseñoTodoFooter a{
+   text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 45%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
 
+}
+.DiseñoTodoFooter a:hover{
+   transform: scale(1.2);
 
+}
 
 
 /* CSS de index*/
@@ -68,8 +97,8 @@
  
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px;
-    height: 100%;
+   
+    @include gap-height(0px,100%);
     
  }
  
@@ -103,8 +132,7 @@
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px;
-    height: 100%;
+    @include gap-height(0px,100%);
  }
  #ServiciosMain {
     grid-row-start: 4;
@@ -119,43 +147,47 @@
     grid-column-end: 6;
     text-align: center;   
  }
- #item-4Servicios { 
-    background-color: #fbed99; 
+
+ .Servicios4 { 
+   padding: 6px;
+      margin: 10px;
+     background-color: #569ec7;
     grid-row-start: 5;
     grid-column-start: 1; 
     grid-row-end: 6;
-    grid-column-end: 3;   
+    grid-column-end: 3;
+       
  }
- #item-5Servicios {
-    background-color: #bbe558; 
+ .Servicios5 {
+   @extend .Servicios4;
     grid-row-start: 6;
     grid-column-start: 1;
     grid-row-end: 7;
     grid-column-end: 3;  
  }
- #item-6Servicios { 
-    background-color: #8a77fc; 
+ .Servicios6 { 
+   @extend .Servicios4;
     grid-row-start: 5;
     grid-column-start: 4; 
     grid-row-end: 6;
     grid-column-end: 6;   
  }
- #item-7Servicios {
-    background-color: #ed7ce9; 
+ .Servicios7 {
+   @extend .Servicios4;
     grid-row-start: 6;
     grid-column-start: 4;
     grid-row-end: 7;
     grid-column-end: 6; 
  }
- #item-8Servicios {
-    background-color: #bc9d66; 
+ .Servicios8 {
+   @extend .Servicios4;
     grid-row-start: 5;
     grid-column-start: 3;
     grid-row-end: 6;
     grid-column-end: 4;  
  }
- #item-9Servicios {
-    background-color: #8ed8fd; 
+ .Servicios9 {
+   @extend .Servicios4;
     grid-row-start: 6;
     grid-column-start: 3;
     grid-row-end: 7;
@@ -167,8 +199,7 @@
    display: grid; 
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   gap: 0px;
-   height: 100%;
+   @include gap-height(0px,100%);
 }
 
 #PromocionesArticulo{
@@ -190,8 +221,7 @@
    display: grid; 
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   gap: 0px;
-   height: 100%;
+   @include gap-height(0px,100%);
 } 
 
 #ContactoFormulario {
@@ -221,8 +251,7 @@
    display: grid; 
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
-   gap: 0px;
-   height: 100%;
+   @include gap-height(0px,100%);
 } 
 
 #AdcMain {
@@ -245,8 +274,7 @@
 
 @media (min-width: 720px){
    .BodyGeneral{
-      height: auto;
-      width: auto;
+      @include sizes(auto,auto);
    }
    .NavGeneral{
       display: inline;
@@ -273,38 +301,55 @@
       color: white;
 
    }
+   
    .DiseñoTodoFooter{
-      color:white;
+      min-width: 700px;
+       display: flex;
+       justify-content: space-around;
+   }
+   
+   .DiseñoTodoFooter a{
+      @include sizes(60,60);
+      text-decoration: none;
+       font-size: 28px;
+       line-height: 60px;
+       text-align: center;
+       background: #314652;
+       color: #ffffff;
+       border-radius: 45%;
+       box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+       transition: all .4s ease-in-out;
+   
+   }
+   .DiseñoTodoFooter a:hover{
+      transform: scale(1.2);
+   
    }
 
  /* CSS de index PC*/
    .angry-grid {
       display:inline;
-      gap: 0px;
-      height: 100%;
+      @include gap-height(0px,100%);
    }
  
  /* CSS de servicios PC*/
  .angry-gridServicios{
    display:inline;
-      gap: 0px;
-      height: 100%;
+   @include gap-height(0px,100%);
  }
 
 
  /* CSS de promociones PC*/
  .angry-gridPromociones{
    display:inline;
-   gap: 0px;
-   height: 100%;
+   @include gap-height(0px,100%);
  }
 
 
  /* CSS de contacto PC*/
  .angry-gridContacto{
    display:inline;
-   gap: 0px;
-   height: 100%;
+   @include gap-height(0px,100%);
  }
  
 
