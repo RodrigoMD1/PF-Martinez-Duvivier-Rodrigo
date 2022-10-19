@@ -1,33 +1,43 @@
 *{
     box-sizing: border-box;
      margin: 0; }
-
+     @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
 
 .BodyGeneral{
 
     font-family: 'Aboreto', cursive;
 
     
-     /* ff 3.6+ */
-    background:-moz-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%); 
+    
+
+      /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, rgba(0, 0, 0, 1) 100%); 
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
+    background:-webkit-linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, rgba(0, 0, 0, 1) 100%);
 
     /* opera 11.10+ */
-    background:-o-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
+    background:-o-linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, rgba(0, 0, 0, 1) 100%);
 
     /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2D56AD', endColorstr='#060606', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#031213', GradientType=0 );
 
     /* ie 10+ */
-    background:-ms-linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
+    background:-ms-linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, rgba(0, 0, 0, 1) 100%);
 
     /* global 94%+ browsers support */
-    background:linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(45, 86, 173, 1) 100%);
+    background:linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, rgba(0, 0, 0, 1) 100%);
+
+  
+  
  
      height: 100vh;
 }
+
+
+
+
+
 $Font-sizes: (
   h1: 40px,
   h2: 36px,
@@ -53,17 +63,40 @@ $Font-sizes: (
    width: $width;
 }
 
+.PGeneral{
+   margin: 20px;
+   font-family: 'Raleway', sans-serif;
+   
+}
+
+.TextoCentro p {
+   font-size: 20px;
+}
+
+.fw-bold{
+   font-size: 35px;
+   text-decoration: underline;
+}
+.Pcaracter p{
+   font-size: 18px;
+}
 
 
 
 .card-body{
    background-color: #22323b;
+   font-size: 18px;
+    
+    
+    font-weight: 700;
+   
 }
 
 .container-fluid li a {
    color: rgb(241, 240, 240);
     
 }
+$card-height: 100%;
 
 .DiseñoTodoFooter{
    min-width: 200px;
@@ -102,6 +135,10 @@ $Font-sizes: (
     
  }
  
+ .col{
+
+   display: flex;
+ }
  #item-Main { 
     grid-row-start: 5;
     grid-column-start: 1;
@@ -214,6 +251,74 @@ $Font-sizes: (
    grid-row-end: 7;
    grid-column-end: 6;
    text-align: center; 
+}
+
+
+
+.galeria{
+   font-family: 'Raleway', sans-serif;
+}
+
+.galeria h1{
+   text-align: center;
+   margin:20px 0 15px 0;
+   font-weight: 300;
+}
+
+.linea{
+   border-top: 5px solid #0077C0;
+   margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+   display:grid;
+   width: 85%;
+   margin: auto;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   align-content: center;
+   border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+   width: 90%;
+   position: relative;
+   height:250px;
+   margin-bottom:5px;
+   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+   width: 100%;
+   height:100%;
+   object-fit: cover;
+}
+
+.overlay{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background:rgba(0, 118, 192, 0.781) ;
+   width: 100%;
+   height: 0;
+   overflow: hidden;
+   transition: .5s ease;
+}
+
+.overlay h2{
+   color: #fff;
+   font-weight: 300;
+   font-size:30px;
+   position: absolute;
+   top: 50%;
+   left:50%;
+   text-align: center;
+   transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+   height:100%;
+   cursor: pointer;
 }
 
  /* CSS de Contacto*/
@@ -337,21 +442,31 @@ $Font-sizes: (
    display:inline;
    @include gap-height(0px,100%);
  }
-
-
- /* CSS de promociones PC*/
- .angry-gridPromociones{
-   display:inline;
-   @include gap-height(0px,100%);
+/* CSS de promociones pc */
+ 
+.galeria{
+   width: auto;
+}
+.contenedor-imagenes{
+   display: flex;
+   flex-wrap: wrap;
+   width: 85%;
+   margin: auto;
+   
  }
 
+ 
+ .contenedor-imagenes .imagen{
+   width: 32%;
+   
+}
 
  /* CSS de contacto PC*/
  .angry-gridContacto{
    display:inline;
    @include gap-height(0px,100%);
  }
- 
+
 
 /* CSS de acerca de nosotros PC*/
 .angry-gridAcercaDeNosotros{
@@ -361,5 +476,18 @@ $Font-sizes: (
 }
 
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
