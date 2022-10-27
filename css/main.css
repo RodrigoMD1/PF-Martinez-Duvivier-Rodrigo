@@ -5,20 +5,12 @@
   margin: 0; }
 
 .BodyGeneral {
-  font-family: 'Aboreto', cursive;
-  /* ff 3.6+ */
-  background: -moz-linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, black 100%);
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, black 100%);
-  /* opera 11.10+ */
-  background: -o-linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, black 100%);
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#031213', GradientType=0 );
-  /* ie 10+ */
-  background: -ms-linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, black 100%);
-  /* global 94%+ browsers support */
-  background: linear-gradient(90deg, rgba(3, 18, 19, 0.85) 0%, black 100%);
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #023030;
   height: 100vh; }
+
+.navbar-toggler-icon {
+  color: white; }
 
 h1 {
   Font-size: 40px;
@@ -29,7 +21,7 @@ h2 {
   color: white; }
 
 h3 {
-  Font-size: 24px;
+  Font-size: 34px;
   color: white; }
 
 h4 {
@@ -37,7 +29,7 @@ h4 {
   color: white; }
 
 p {
-  Font-size: 18px;
+  Font-size: 20px;
   color: white; }
 
 .PGeneral {
@@ -92,7 +84,8 @@ p {
   gap: 0px; }
 
 .col {
-  display: flex; }
+  display: flex;
+  color: white; }
 
 #item-Main {
   grid-row-start: 5;
@@ -113,9 +106,6 @@ p {
   color: white;
   grid-row-end: 5;
   grid-column-end: 5; }
-
-.col {
-  color: white; }
 
 /* CSS de servicios*/
 .angry-gridServicios {
@@ -141,7 +131,7 @@ p {
 .Servicios4, .Servicios5, .Servicios6, .Servicios7, .Servicios8, .Servicios9 {
   padding: 6px;
   margin: 10px;
-  background-color: #569ec7;
+  background-color: rgba(247, 203, 11, 0.842);
   grid-row-start: 5;
   grid-column-start: 1;
   grid-row-end: 6;
@@ -199,7 +189,7 @@ p {
   text-align: center; }
 
 .galeria {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif; }
 
 .galeria h1 {
   text-align: center;
@@ -207,7 +197,7 @@ p {
   font-weight: 300; }
 
 .linea {
-  border-top: 5px solid #0077C0;
+  border-top: 5px solid #D4AC0D;
   margin-bottom: 40px; }
 
 .contenedor-imagenes {
@@ -236,7 +226,7 @@ p {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0, 118, 192, 0.781);
+  background: rgba(226, 212, 8, 0.781);
   width: 100%;
   height: 0;
   overflow: hidden;
@@ -324,7 +314,7 @@ p {
   .NavGeneral li a {
     position: sticky;
     text-decoration: none;
-    background-color: #131720;
+    background-color: #f2f5fc;
     display: inline-block;
     padding: 5px;
     margin: 5px;
@@ -333,6 +323,8 @@ p {
     border: 3px solid #52f0e3;
     border-radius: 100px;
     color: white; }
+  .nav-item {
+    font-size: 30px; }
   .DiseñoTodoFooter {
     min-width: 700px;
     display: flex;
